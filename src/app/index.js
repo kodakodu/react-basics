@@ -11,6 +11,10 @@ import { Home } from "./components/Home";
 
 class App extends React.Component {
     render(){
+      let user ={
+        name:"Yann",
+        hobbies: ["Sports","Television"]
+      };
         return(
           <div className="container">
                 <div className="row">
@@ -20,7 +24,9 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                   <div >
-                    <Home/>
+                    <Home age={42} user={user}>
+                      <p>Lorem ipsum, Lorem ipsum</p>
+                    </Home>
                   </div>
                 </div>
           </div>
